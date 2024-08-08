@@ -6,28 +6,28 @@ Install virtual environment.
 
 Run `pip install virtualenv`
 
-# Step 1 Clone the Repo
+## Step 1 Clone the Repo
 
 Run command `git clone <repo_url>`
 
-# Step 2 Install venv
+## Step 2 Install venv
 
 Navigate to your repo.
 Run command `virtualenv .venv`
 
-# Step 3 Activate virtual enviroment.
+## Step 3 Activate virtual enviroment.
 
 Run command `source .venv/bin/activate`
 
-# Step 4 Installing python packages.
+## Step 4 Installing python packages.
 
 Run command `pip install -r requirements.txt`
 
-# Step 5 Building docker image
+## Step 5 Building docker image
 
 Run command `docker build -t fetcher .`
 
-# Step 6 Running docker image
+## Step 6 Running docker image
 
 Run command `docker run -it --rm -v $(pwd):/app fetcher <site_url> --metadata --mirror`
 
